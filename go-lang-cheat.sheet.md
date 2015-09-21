@@ -41,3 +41,8 @@ Functions:
 	append cap close complex copy delete imag len
 	make new panic print println real recover
 ```
+
+#### Composite Types
+```
+array, struct, pointer, function, interface, slice, map, and channel
+```
