@@ -58,8 +58,21 @@ new  - allocates zeroed storage memory and returns a pointer
 make - creates slices, maps, and channels only. it returns an initialized (not zeroed) value
 ```
 
-#### Arrays & Slices & Maps
+#### Data Structures
 ```
+Primitive Types
+  bool byte complex64 complex128 error float32 float64
+  int int8 int16 int32 int64 rune string
+  uint uint8 uint16 uint32 uint64 uintptr
+Composite Types
+  array slice map struct pointer function interface channel
+Initialization
+
+a := [2]int{5, 6}
+	b := []int{}
+	c := map[string]int{}
+	d := Point{}
+
 var v [5]float64             # creates array 5 float64 set to 0
 w := [3]int{1,2,3}           # creates array 3 int set to values
 x := [...]string{`a`, "b"}   # creates array 2 string set to a and b
