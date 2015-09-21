@@ -69,6 +69,13 @@ Initialization Literal
 Initialization Make
   a := make([]float64, 5, 10)    # creates slice float64, len 5, capacity 10
   b := make(map[bool]byte, 100)  # creates map with 100 capacity
+  c := make(chan int, 10)        # creates buffered channel of integers
+Initialization New
+  # slices, maps and channels are created using make
+  a := new(int)         # a pointer to an integer
+  b := new(string)      # a pointer to a string
+  c := new([3]string)   # a pointer to an array
+  d := new(Point)       # a pointer to a struct
 ```
 
 #### Starting GoDoc HTTP Server
