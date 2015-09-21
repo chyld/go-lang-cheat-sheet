@@ -67,6 +67,9 @@ y := make([]float64, 5, 10)  # creates slice float64, len 5, capacity 10
 z := somearray[2:5]          # creates slice T, len 3, capacity is len(somearray)
 a := map[string]int64{}      # creates empty map
 b := make(map[bool]byte)     # creates empty map
+
+xxxx unify array, slice, map, struct initialization
+
 ```
 
 #### Starting GoDoc HTTP Server
