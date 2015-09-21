@@ -64,3 +64,8 @@ x := [3]int{1,2,3}
 y := [...]int{4,5}
 z := make([]float64, 5, 10)
 ```
+
+#### Starting GoDoc HTTP Server
+```
+godoc -http=:6060
+```
