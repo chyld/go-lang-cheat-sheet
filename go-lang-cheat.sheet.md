@@ -49,7 +49,7 @@ array, struct, pointer, function, interface, slice, map, and channel
 
 #### Control Structures
 ```
-if, switch, for # all have local memory initializers
+if, switch, for # all have local memory initializers, no parens
 ```
 
 #### Memory Allocation
