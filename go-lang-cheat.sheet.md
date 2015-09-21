@@ -60,10 +60,11 @@ make - creates slices, maps, and channels only. it returns an initialized (not z
 
 #### Arrays & Slices
 ```
-var w [5]float64             # creates array 5 float64 set to 0
-x := [3]int{1,2,3}           # creates array 3 int set to values
-y := [...]string{`a`, "b"}   # creates array 2 string set to a and b
-z := make([]float64, 5, 10)  # creates slice float64, len 5, capacity 10
+var v [5]float64             # creates array 5 float64 set to 0
+w := [3]int{1,2,3}           # creates array 3 int set to values
+x := [...]string{`a`, "b"}   # creates array 2 string set to a and b
+y := make([]float64, 5, 10)  # creates slice float64, len 5, capacity 10
+z := somearray[2:5]          # creates slice T, len 3, capacity is len(somearray)
 ```
 
 #### Starting GoDoc HTTP Server
