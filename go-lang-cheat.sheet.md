@@ -57,3 +57,10 @@ if, switch, for
 new  - allocates zeroed storage memory and returns a pointer
 make - creates slices, maps, and channels only. it returns an initialized (not zeroed) value
 ```
+
+#### Arrays & Slices
+```
+x := [3]int{1,2,3}
+y := [...]int{4,5}
+z := make([]float64, 5, 10)
+```
