@@ -1,5 +1,9 @@
-# GO language cheat sheet
+# Go language cheat sheet
 
+#### Links
+- [The Spec](http://golang.org/ref/spec)
+- [Effective Go](http://golang.org/doc/effective_go.html)
+- [Packages](http://golang.org/pkg/)
 
 #### Reserved Words
 ```
