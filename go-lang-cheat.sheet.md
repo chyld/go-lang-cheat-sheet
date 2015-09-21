@@ -51,3 +51,9 @@ array, struct, pointer, function, interface, slice, map, and channel
 ```
 if, switch, for
 ```
+
+#### Memory Allocation
+```
+new  - allocates zeroed storage memory and returns a pointer
+make - creates slices, maps, and channels only. it returns an initialized (not zeroed) value
+```
