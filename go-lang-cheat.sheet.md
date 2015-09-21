@@ -46,3 +46,8 @@ Functions:
 ```
 array, struct, pointer, function, interface, slice, map, and channel
 ```
+
+#### Control Structures
+```
+if, switch, for
+```
