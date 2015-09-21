@@ -60,6 +60,7 @@ make - creates slices, maps, and channels only. it returns an initialized (not z
 
 #### Arrays & Slices
 ```
+var w [5]float64
 x := [3]int{1,2,3}
 y := [...]int{4,5}
 z := make([]float64, 5, 10)
