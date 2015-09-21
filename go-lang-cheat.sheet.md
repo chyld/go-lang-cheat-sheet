@@ -13,3 +13,13 @@ chan         else         goto         package      switch
 const        fallthrough  if           range        type
 continue     for          import       return       var
 ```
+
+#### Operators
+```
++    &     +=    &=     &&    ==    !=    (    )
+-    |     -=    |=     ||    <     <=    [    ]
+*    ^     *=    ^=     <-    >     >=    {    }
+/    <<    /=    <<=    ++    =     :=    ,    ;
+%    >>    %=    >>=    --    !     ...   .    :
+     &^          &^=
+```
