@@ -58,13 +58,15 @@ new  - allocates zeroed storage memory and returns a pointer
 make - creates slices, maps, and channels only. it returns an initialized (not zeroed) value
 ```
 
-#### Arrays & Slices
+#### Arrays & Slices & Maps
 ```
 var v [5]float64             # creates array 5 float64 set to 0
 w := [3]int{1,2,3}           # creates array 3 int set to values
 x := [...]string{`a`, "b"}   # creates array 2 string set to a and b
 y := make([]float64, 5, 10)  # creates slice float64, len 5, capacity 10
 z := somearray[2:5]          # creates slice T, len 3, capacity is len(somearray)
+a := map[string]int64{}      # creates empty map
+b := make(map[bool]byte)     # creates empty map
 ```
 
 #### Starting GoDoc HTTP Server
