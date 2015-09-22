@@ -79,6 +79,13 @@ Initialization New
   d := new(Point)       # a pointer to a struct
 ```
 
+#### Methods
+- Use pointer. No expensive array copy. No need for return value. Modify in place.
+- Caller can be either pointer or value, go will convert type.
+```
+func (p *Point) Scale(x int, y string) float64 {}
+```
+
 #### Starting GoDoc HTTP Server
 ```
 godoc -http=:6060
