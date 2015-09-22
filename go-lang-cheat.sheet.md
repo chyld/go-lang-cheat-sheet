@@ -4,6 +4,7 @@
 - [The Spec](http://golang.org/ref/spec)
 - [Effective Go](http://golang.org/doc/effective_go.html)
 - [Packages](http://golang.org/pkg/)
+- [The Source](https://go.googlesource.com/go/)
 
 #### Reserved Words
 ```
