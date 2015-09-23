@@ -67,6 +67,14 @@ Initialization Literal
   g := list[2:5]            # slice from exiting array
   h := map[string]int{}     # map
   i := Point{}              # struct
+  
+  
+  var pt Point
+  var dg Dog
+  var sl []int
+  
+  
+  
 Initialization Make
   a := make([]float64, 5, 10)    # creates slice float64, len 5, capacity 10
   b := make(map[bool]byte, 100)  # creates map with 100 capacity
