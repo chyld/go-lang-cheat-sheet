@@ -68,7 +68,9 @@ Initialization Literal
   h := map[string]int{}     # map
   i := Point{}              # struct
   
-  
+  var x int
+  var y float
+  var z bool
   var pt Point
   var dg Dog
   var sl []int
