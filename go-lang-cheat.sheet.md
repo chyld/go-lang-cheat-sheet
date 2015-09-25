@@ -61,41 +61,30 @@ uint uint8 uint16 uint32 uint64 uintptr
 array slice map struct pointer function interface channel
 ```
 
+#### Initialization
+```
+# 3 ways of creating an int with zero value
+var a int
+b := 0
+c := new(int)
 
-Initialization Literal
-  a := 3                    # integer
-  b := 3.14                 # float64
-  c := `hello` + "world"    # string
-  d := [2]int{5, 6}         # array
-  e := [...]string{"a"}     # array for unknown list size
-  f := []int{}              # slice creates new array
-  g := list[2:5]            # slice from exiting array
-  h := map[string]int{}     # map
-  i := Point{}              # struct
-  
-  var x int
-  var y float
-  var z bool
-  var pt Point
-  var dg Dog
-  var sl []int
-  
-  
-  
-Initialization Make
-  a := make([]float64, 5, 10)    # creates slice float64, len 5, capacity 10
-  b := make(map[bool]byte, 100)  # creates map with 100 capacity
-  c := make(chan int, 10)        # creates buffered channel of integers
-Initialization New
-  # slices, maps and channels are created using make
-  a := new(int)         # a pointer to an integer
-  b := new(string)      # a pointer to a string
-  c := new([3]string)   # a pointer to an array
-  d := new(Point)       # a pointer to a struct
+# 3 ways of creating an empty string
+var a string
+b := ""
+c := new(string)
 
+# 4 ways of creating an int array of zeros
+var a [3]int
+b := [3]int{0, 0, 0}
+c := [...]int{0, 0, 0}
+d := new([3]int)
 
+# using make, for slices, maps, and channels
+a := make([]float64, 5, 10)    # creates slice float64, len 5, capacity 10
+b := make(map[bool]byte, 100)  # creates map with 100 capacity
+c := make(chan int, 10)        # creates buffered channel of integers
 
-
+```
 
 #### Methods
 - Use pointer. No expensive array copy. No need for return value. Modify in place.
