@@ -63,21 +63,36 @@ array slice map struct pointer function interface channel
 
 #### Initialization
 ```
-# 3 ways of creating an int with zero value
+# creating an int with zero value
 var a int
 b := 0
 c := new(int)
 
-# 3 ways of creating an empty string
+# creating an empty string
 var a string
 b := ""
 c := new(string)
 
-# 4 ways of creating an int array of zeros
+# creating an int array of zeros
 var a [3]int
 b := [3]int{0, 0, 0}
 c := [...]int{0, 0, 0}
 d := new([3]int)
+
+# creating an empty slice of ints
+var a []int
+b := []int{}
+c := new([]int)
+d := make([]int, 0, 0)
+
+# creating an empty map
+a := map[string]int{}
+b := make(map[string]int, 0)
+
+# creating an point with x:0, y:0
+var a point
+b := point{}
+c := new(point)
 
 # using make, for slices, maps, and channels
 a := make([]float64, 5, 10)    # creates slice float64, len 5, capacity 10
