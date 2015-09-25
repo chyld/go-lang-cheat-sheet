@@ -49,14 +49,19 @@ new  - allocates zeroed storage memory and returns a pointer
 make - creates slices, maps, and channels only. it returns an initialized (not zeroed) value
 ```
 
-#### Data Structures
+#### Primitive Types
 ```
-Primitive Types
-  bool byte complex64 complex128 error float32 float64
-  int int8 int16 int32 int64 rune string
-  uint uint8 uint16 uint32 uint64 uintptr
-Composite Types
-  array slice map struct pointer function interface channel
+bool byte complex64 complex128 error float32 float64
+int int8 int16 int32 int64 rune string
+uint uint8 uint16 uint32 uint64 uintptr
+```
+
+#### Composite Types
+```
+array slice map struct pointer function interface channel
+```
+
+
 Initialization Literal
   a := 3                    # integer
   b := 3.14                 # float64
@@ -87,7 +92,10 @@ Initialization New
   b := new(string)      # a pointer to a string
   c := new([3]string)   # a pointer to an array
   d := new(Point)       # a pointer to a struct
-```
+
+
+
+
 
 #### Methods
 - Use pointer. No expensive array copy. No need for return value. Modify in place.
@@ -99,4 +107,9 @@ func (p *Point) Scale(x int, y string) float64 {}
 #### Starting GoDoc HTTP Server
 ```
 godoc -http=:6060
+```
+
+#### Get Max CPU Count
+```
+p := runtime.GOMAXPROCS(0)
 ```
