@@ -144,4 +144,6 @@ type Alpha struct {
 - go test -cover # code coverage
 - go test -coverprofile=c.out # create coverage report
 - go tool cover -html=c.out # view coverage report in browser
-- go test -cover ./... # run all tests, include coverage
+- go test -cover -v ./... # run all tests, include coverage, verbose mode
+- go test --help # all test related info
+
