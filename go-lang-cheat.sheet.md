@@ -117,3 +117,11 @@ godoc -http=:6060
 ```
 p := runtime.GOMAXPROCS(0)
 ```
+
+
+|Golang|Classic OOP
+|----|----|
+|*struct*|class  with fields, only non-virtual methods
+|*interface*|class without fields, only virtual methods
+|*embedding*|multiple inheritance AND composition
+|*receiver*|implict *this* parameter
