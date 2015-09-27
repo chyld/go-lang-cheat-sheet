@@ -118,7 +118,7 @@ godoc -http=:6060
 p := runtime.GOMAXPROCS(0)
 ```
 
-
+#### OOP in Go
 |Golang|Classic OOP
 |----|----|
 |*struct*|class  with fields, only non-virtual methods
