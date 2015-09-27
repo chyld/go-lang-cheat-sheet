@@ -142,4 +142,5 @@ type Alpha struct {
 - Create func TestReverse(t *testing.T)
 - go test # to run
 - go test -cover # code coverage
-
+- go test -coverprofile=c.out # create coverage report
+- go tool cover -html=c.out # view coverage report in browser
