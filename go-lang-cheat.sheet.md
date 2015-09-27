@@ -125,3 +125,9 @@ p := runtime.GOMAXPROCS(0)
 |*interface*|class without fields, only virtual methods
 |*embedding*|multiple inheritance AND composition
 |*receiver*|implict *this* parameter
+
+#### Testing in Go
+- Create reverse.go
+- Create reverse_test.go
+- Create func TestReverse(t *testing.T)
+- go test # to run
