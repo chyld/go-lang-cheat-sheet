@@ -126,6 +126,16 @@ p := runtime.GOMAXPROCS(0)
 |*embedding*|multiple inheritance AND composition
 |*receiver*|implict *this* parameter
 
+#### Inheritance and Composition
+```
+type Alpha struct {
+  Beta
+  Gamma
+  d Delta
+  e , f int64
+}
+```
+
 #### Testing in Go
 - Create reverse.go
 - Create reverse_test.go
